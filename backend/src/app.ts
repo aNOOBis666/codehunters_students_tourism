@@ -4,7 +4,7 @@ import { EntityController } from "./controllers/entity.controller.js";
 import bodyParser from "body-parser";
 
 const app: Express = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 app.use(bodyParser.json());
 
 const authController = new AuthController();
