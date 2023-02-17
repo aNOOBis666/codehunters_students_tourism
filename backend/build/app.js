@@ -9,7 +9,11 @@ const authController = new AuthController();
 const entityController = new EntityController();
 app.post("/register", authController.register);
 app.post("/login", authController.login);
-app.get("/labs", entityController.getLabs);
+app.get("/lab", entityController.getLabs);
+app.get("/university", entityController.getUniversities);
+app.get("/dormitory", entityController.getDormitories);
+app.get("/universityEvent", entityController.getUniversityEvent);
+app.get("/news", entityController.getNews);
 app.listen(port, () => {
     console.log(`Сервер запущен по адресу http://localhost:${port}`);
 });
