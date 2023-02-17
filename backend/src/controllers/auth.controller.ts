@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { AuthModel } from "../models/auth.js";
+import { AuthModel } from "../models/auth.model.js";
 
 const authModel = new AuthModel();
 
