@@ -51,8 +51,4 @@ class StudTourService(
     override suspend fun getLabs(labID: String): List<LabEntity> {
         return client.getLabs(labID).requestStatus().toLabs()
     }
-
-    override suspend fun getReviews(): List<ReviewEntity> {
-        return client.getReviews().requestStatus().toReviews()
-    }
 }

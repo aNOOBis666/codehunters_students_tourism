@@ -13,7 +13,7 @@ interface INavigation {
     suspend fun onShowLogin()
     suspend fun onShowLogout()
     suspend fun onShowLoginInput()
-    suspend fun onShowRegistration()
+    suspend fun onShowRegistration(stepNum: Int)
 
     suspend fun onShowProfile()
 }

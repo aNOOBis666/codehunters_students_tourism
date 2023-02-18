@@ -11,5 +11,4 @@ interface IStudTourService {
     suspend fun getRooms(roomID: String): List<RoomEntity>
     suspend fun getEvents(eventID: String): List<EventEntity>
     suspend fun getLabs(labID: String): List<LabEntity>
-    suspend fun getReviews(): List<ReviewEntity>
 }

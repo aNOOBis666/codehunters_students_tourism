@@ -29,6 +29,7 @@ class LoginInputViewModel @Inject constructor(
 
     private var loginJob: Job? = null
     private var navigationJob: Job? = null
+    private var backNavJob: Job? = null
 
     fun loginInput(email: String, password: String) {
         loginJob?.cancelNullable()
@@ -45,6 +46,13 @@ class LoginInputViewModel @Inject constructor(
         navigationJob?.cancelNullable()
         navigationJob = viewModelScope.launch(Dispatchers.IO) {
             navigation.onShowProfile()
+        }
+    }
+
+    fun onShowPrevious() {
+        backNavJob?.cancelNullable()
+        backNavJob = viewModelScope.launch(Dispatchers.IO) {
+            navigation.back()
         }
     }
 }

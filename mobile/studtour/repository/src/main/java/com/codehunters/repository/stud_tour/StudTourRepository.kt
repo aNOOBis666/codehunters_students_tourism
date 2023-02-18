@@ -29,7 +29,4 @@ class StudTourRepository(
     override suspend fun getLabs(labID: String): List<LabInfo> {
         return studTourService.getLabs(labID).toLabInfo()
     }
-    override suspend fun getReviews(): List<ReviewInfo> {
-        return studTourService.getReviews().toReviewInfo()
-    }
 }

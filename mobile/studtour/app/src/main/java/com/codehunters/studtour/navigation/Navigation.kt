@@ -2,6 +2,7 @@ package com.codehunters.studtour.navigation
 
 import androidx.annotation.IdRes
 import com.codehunters.studtour.R
+import com.codehunters.studtour.ui.profile.registration.RegistrationFragment
 
 class Navigation(
     private val navigationDispatcher: NavDispatcher
@@ -32,8 +33,8 @@ class Navigation(
         navigationDispatcher.navigate(R.id.fmt_login_input_destination)
     }
 
-    override suspend fun onShowRegistration() {
-        navigationDispatcher.navigate(R.id.fmt_registration_destination)
+    override suspend fun onShowRegistration(stepNum: Int) {
+        navigationDispatcher.navigate(R.id.fmt_registration_destination, RegistrationFragment.getArgs(stepNum))
     }
 
     override suspend fun onShowProfile() {

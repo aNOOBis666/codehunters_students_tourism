@@ -10,17 +10,17 @@ import retrofit2.http.Path
 interface StudTourApiService {
 
 //  Receive News
-    @GET("articles")
+    @GET("news")
     suspend fun getArticles(): Response<List<ResponseData>>
 
 //  Receive Universities
-    @GET("universities/{universityID}")
+    @GET("university/{universityID}")
     suspend fun getUniversities(
     @Path("universityID") universityID: String
     ): Response<List<ResponseUniversityData>>
 
 //  Receive Dormitories
-    @GET("dormitories/{dormitoryID}")
+    @GET("dormitory/{dormitoryID}")
     suspend fun getDormitories(
     @Path("dormitoryID") dormitoryID: String
     ): Response<List<ResponseData>>
@@ -32,18 +32,14 @@ interface StudTourApiService {
     ): Response<List<ResponseData>>
 
 //  Receive Events
-    @GET("events/{eventID}")
+    @GET("universityEvent/{eventID}")
     suspend fun getEvents(
     @Path("eventID") eventID: String
     ): Response<List<ResponseData>>
 
 //  Receive Labs
-    @GET("labs/{labID}")
+    @GET("lab/{labID}")
     suspend fun getLabs(
     @Path("labID") labID: String
     ): Response<List<ResponseLabsData>>
-
-//  Receive Reviews
-    @GET("reviews")
-    suspend fun getReviews(): Response<List<ResponseData>>
 }

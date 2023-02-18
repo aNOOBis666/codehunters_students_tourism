@@ -25,6 +25,7 @@ class LoginInputFragment : Fragment(R.layout.fmt_login_input) {
                     viewModel.loginInput(email.text.toString(), password.text.toString())
                 }
             }
+            back.setOnClickListener { viewModel.onShowPrevious() }
         }
         viewModel.isAuthorized.observe(this, observer = ::renderAuthorization)
         viewModel.failureState.observe(this, observer = ::renderError)

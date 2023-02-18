@@ -20,6 +20,8 @@
 
     <string name="profile_button_login_text">Войти</string>
     <string name="profile_login_text">Вход</string>
+    <string name="profile_registration_text">Регистрация</string>
+    <string name="profile_next_button_text">Продолжить</string>
     <string name="profile_button_registration_text">Зарегистрироваться</string>
     <string name="profile_button_logout_text">Выйти</string>
 

@@ -12,13 +12,13 @@ import retrofit2.http.PUT
 interface AuthApiService {
 
     //  Register new user
-    @POST("users/signup")
+    @POST("register")
     suspend fun registerUser(
         @Body authData: AuthData
     ): Response<ResponseToken>
 
     //  Authorize user by email and password
-    @POST("users/login")
+    @POST("login")
     suspend fun loginUser(
         @Body authData: AuthData
     ): Response<ResponseToken>
@@ -28,7 +28,7 @@ interface AuthApiService {
     suspend fun getMe(): Response<UserData>
 
     //  Updates users info
-    @PUT("users")
+    @PUT("me")
     suspend fun updateMe(
         @Body userData: UserData
     ): Response<UserData>
