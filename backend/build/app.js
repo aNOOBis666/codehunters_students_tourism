@@ -10,11 +10,25 @@ const entityController = new EntityController();
 app.post("/register", authController.register);
 app.post("/login", authController.login);
 app.get("/me", authController.me);
+app.put("/me", authController.updateMe);
 app.get("/lab", entityController.getLabs);
+app.get("/room", entityController.getRooms);
+app.get("/room/:id", entityController.getRooms);
 app.get("/university", entityController.getUniversities);
 app.get("/dormitory", entityController.getDormitories);
 app.get("/universityEvent", entityController.getUniversityEvent);
 app.get("/news", entityController.getNews);
+// test@gmail.com
+// 12345
+// Минимальные данные для букинга
+// {
+//     "roomId": "nOypqKdR3p",
+//     "quantity": 1,
+//     "dates": {
+//         "from": "2023-01-18",
+//         "to": "2023-01-22"
+//     }
+// }
 app.listen(port, () => {
     console.log(`Сервер запущен по адресу http://localhost:${port}`);
 });

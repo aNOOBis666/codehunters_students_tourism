@@ -20,6 +20,12 @@ interface IAuthController {
     res: Response,
     next: NextFunction
   ) => Promise<Response | Error>;
+
+  updateMe: (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ) => Promise<Response>;
 }
 
 export class AuthController implements IAuthController {
@@ -66,6 +72,19 @@ export class AuthController implements IAuthController {
     if (!data) {
       return res.status(401).json({ msg: "Юзер не найден" });
     }
+    return res.json(data);
+  }
+  // @ts-ignore
+  async updateMe(req: Request, res: Response, next: NextFunction) {
+    const token = req.header("Authorization");
+    const info = req.body;
+    if (!info) {
+      return res.status(400).json({ message: "Не указан объект юзера" });
+    }
+    if (!token) {
+      return res.status(400).json({ message: "Не указан токен" });
+    }
+    const { data } = await authModel.updateMe(info, token);
     return res.json(data);
   }
 }

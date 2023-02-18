@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import { EntityModel } from "../models/entity.model.js";
-import * as querystring from "querystring";
+import { IRoomsReturn } from "../interfaces/entity.model.interface";
 
 const entityModel = new EntityModel();
 
@@ -26,6 +26,11 @@ interface IEntityController {
     next: NextFunction
   ) => Promise<Response>;
   getLabs: (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ) => Promise<Response>;
+  getRooms: (
     req: Request,
     res: Response,
     next: NextFunction
@@ -62,6 +67,20 @@ export class EntityController implements IEntityController {
     next: NextFunction
   ): Promise<Response> {
     const { data } = await entityModel.getNews();
+    return res.json(data);
+  }
+
+  async getRooms(
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ): Promise<Response> {
+    const { id } = req.params;
+    if (id) {
+      const data = await entityModel.getRoomsById(id);
+      return res.json(data);
+    }
+    const { data } = await entityModel.getRooms();
     return res.json(data);
   }
 

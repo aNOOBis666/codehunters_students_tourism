@@ -8,3 +8,58 @@
 - `/university` - GET запрос, возвращающий университеты.
 - `/dormitory` - GET запрос, возвращающий общежития.
 - `/universityEvent` - GET запрос, возвращающий события в университетах.
+
+Также на стороне бекенда реализована сортировка списков.
+
+---
+
+## Входные данные для методов
+
+### `login`
+```ts
+
+```
+
+### `register`
+```ts
+
+```
+
+### `book`
+```ts
+{
+  roomId: string;
+  quantity: number;
+  dates: {
+    from: string;
+    to: string;
+  };
+}
+```
+
+### `unbook`
+```ts
+{
+  dates: {
+    from: string;
+    to: string;
+  };
+  id: string;
+  status: "canceled";
+}
+```
+
+
+### `bookEvent`
+```ts
+{
+  details: {
+    email: string;
+    fullName: string;
+    participants: { fullName: string; phone: string; email: string }[];
+    phone: string;
+    quantity: string;
+  };
+  eventId: string;
+}
+```

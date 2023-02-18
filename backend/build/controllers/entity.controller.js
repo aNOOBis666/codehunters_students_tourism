@@ -18,6 +18,15 @@ export class EntityController {
         const { data } = await entityModel.getNews();
         return res.json(data);
     }
+    async getRooms(req, res, next) {
+        const { id } = req.params;
+        if (id) {
+            const data = await entityModel.getRoomsById(id);
+            return res.json(data);
+        }
+        const { data } = await entityModel.getRooms();
+        return res.json(data);
+    }
     async getUniversities(req, res, next) {
         const { data } = await entityModel.getUniversities();
         return res.json(data);

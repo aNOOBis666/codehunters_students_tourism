@@ -32,4 +32,17 @@ export class AuthController {
         }
         return res.json(data);
     }
+    // @ts-ignore
+    async updateMe(req, res, next) {
+        const token = req.header("Authorization");
+        const info = req.body;
+        if (!info) {
+            return res.status(400).json({ message: "Не указан объект юзера" });
+        }
+        if (!token) {
+            return res.status(400).json({ message: "Не указан токен" });
+        }
+        const { data } = await authModel.updateMe(info, token);
+        return res.json(data);
+    }
 }
