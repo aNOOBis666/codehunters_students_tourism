@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">studtour</string>
+
+    <string name="bottom_nav_title_destination">Куда поехать</string>
+    <string name="bottom_nav_title_event">События</string>
+    <string name="bottom_nav_title_booking">Бронирования</string>
+    <string name="bottom_nav_title_profile">Профиль</string>
+
+    <string name="destination_search_hint">Куда хотите поехать?</string>
+    <string name="destination_filter">Фильтр</string>
+    <string name="destination_dormitories">Поиск жилья</string>
+    <string name="destination_science">Наука</string>
+
+    <string name="error_default_text">Кажется что-то пошло не так, повторите попытку позднее</string>
 </resources>

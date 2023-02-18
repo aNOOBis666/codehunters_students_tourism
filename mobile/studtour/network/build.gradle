@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'dagger.hilt.android.plugin'
+    id 'org.jetbrains.kotlin.plugin.serialization'
+}
+
+apply from: "$rootDir/android.gradle"
+apply from: "$rootDir/resources.gradle"
+apply from: "$rootDir/common.gradle"
+
+android {
+    hilt {
+        enableAggregatingTask = true
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation libraries.hilt
+    implementation libraries.lifecycleProcess
+    kapt libraries.hiltCompiler
+    implementation libraries.hiltFragment
+
+    implementation libraries.okHttp
+    implementation libraries.okHttpInterceptor
+
+    implementation libraries.retrofit
+    implementation libraries.retrofitScalars
+    implementation libraries.retrofitRx
+    implementation libraries.retrofitGson
+    implementation libraries.kotlinSerilization
+}

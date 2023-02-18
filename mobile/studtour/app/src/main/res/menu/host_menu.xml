@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/destination_navigation"
+        android:icon="@drawable/v_ic_booking"
+        android:title="@string/bottom_nav_title_destination" />
+
+    <item
+        android:id="@+id/destination_events"
+        android:icon="@drawable/v_ic_event"
+        android:title="@string/bottom_nav_title_event" />
+
+    <item
+        android:id="@+id/destination_booking"
+        android:icon="@drawable/v_ic_booking"
+        android:title="@string/bottom_nav_title_booking" />
+
+    <item
+        android:id="@+id/destination_profile"
+        android:icon="@drawable/v_ic_profile"
+        android:title="@string/bottom_nav_title_profile" />
+</menu>
