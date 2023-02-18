@@ -1,21 +1,35 @@
 // @ts-ignore
 import axios from "axios";
-class BookingModel {
-    async book(info) {
-        const { data } = await axios.post("https://stud-api.sabir.pro/bookings", info);
+export class BookingModel {
+    async book(info, token) {
+        const { data } = await axios.post("https://stud-api.sabir.pro/bookings", info, {
+            headers: {
+                Authorization: token,
+            },
+        });
         return data;
     }
-    async unbook(info) {
-        const { data } = await axios.put("https://stud-api.sabir.pro/bookings", info);
+    async unbook(info, token) {
+        const { data } = await axios.put("https://stud-api.sabir.pro/bookings", info, {
+            headers: {
+                Authorization: token,
+            },
+        });
         return data;
     }
-    async bookEvent(info) {
-        const { data } = await axios.post("https://stud-api.sabir.pro/event-bookings", info);
+    async bookEvent(info, token) {
+        const { data } = await axios.post("https://stud-api.sabir.pro/event-bookings", info, {
+            headers: {
+                Authorization: token,
+            },
+        });
         return data;
     }
     async getMyEventBook(token) {
         const { data } = await axios.get("https://stud-api.sabir.pro/event-bookings/my", {
-            token,
+            headers: {
+                Authorization: token,
+            },
         });
         return data;
     }

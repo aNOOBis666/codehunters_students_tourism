@@ -72,33 +72,54 @@ interface IBookEventReturn {
 }
 
 interface IBookingModel {
-  book: (info: IBookProps) => Promise<IBookReturn>;
-  unbook: (info: IUnbookProps) => Promise<IBookReturn>;
-  bookEvent: (info: IBookEventProps) => Promise<IBookEventReturn>;
+  book: (info: IBookProps, token: string) => Promise<IBookReturn>;
+  unbook: (info: IUnbookProps, token: string) => Promise<IBookReturn>;
+  bookEvent: (
+    info: IBookEventProps,
+    token: string
+  ) => Promise<IBookEventReturn>;
   getMyEventBook: (token: string) => Promise<IBookReturn>;
 }
 
-class BookingModel implements IBookingModel {
-  async book(info: IBookProps): Promise<IBookReturn> {
+export class BookingModel implements IBookingModel {
+  async book(info: IBookProps, token: string): Promise<IBookReturn> {
     const { data } = await axios.post(
       "https://stud-api.sabir.pro/bookings",
-      info
+      info,
+      {
+        headers: {
+          Authorization: token,
+        },
+      }
     );
     return data;
   }
 
-  async unbook(info: IUnbookProps): Promise<IBookReturn> {
+  async unbook(info: IUnbookProps, token: string): Promise<IBookReturn> {
     const { data } = await axios.put(
       "https://stud-api.sabir.pro/bookings",
-      info
+      info,
+      {
+        headers: {
+          Authorization: token,
+        },
+      }
     );
     return data;
   }
 
-  async bookEvent(info: IBookEventProps): Promise<IBookEventReturn> {
+  async bookEvent(
+    info: IBookEventProps,
+    token: string
+  ): Promise<IBookEventReturn> {
     const { data } = await axios.post(
       "https://stud-api.sabir.pro/event-bookings",
-      info
+      info,
+      {
+        headers: {
+          Authorization: token,
+        },
+      }
     );
     return data;
   }
@@ -107,7 +128,9 @@ class BookingModel implements IBookingModel {
     const { data } = await axios.get(
       "https://stud-api.sabir.pro/event-bookings/my",
       {
-        token,
+        headers: {
+          Authorization: token,
+        },
       }
     );
     return data;
