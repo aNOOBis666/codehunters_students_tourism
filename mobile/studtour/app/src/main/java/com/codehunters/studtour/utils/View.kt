@@ -34,3 +34,8 @@ fun View.showSnackbar(message: String) {
     snackbar.view.background = ResourcesCompat.getDrawable(this.resources, R.drawable.drw_error, null)
     snackbar.show()
 }
+
+fun View.visible(isVisible: Boolean) {
+    visibility = if (isVisible) View.VISIBLE
+    else View.GONE
+}

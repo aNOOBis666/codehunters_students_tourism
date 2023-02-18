@@ -2,8 +2,47 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/profile_navigation">
+    android:id="@+id/destination_profile"
+    app:startDestination="@id/fmt_profile_destination">
 
+    <fragment
+        android:id="@+id/fmt_profile_destination"
+        android:name="com.codehunters.studtour.ui.profile.ProfileFragment"
+        tools:layout="@layout/fmt_profile" />
+
+    <fragment
+        android:id="@+id/fmt_user_data_destination"
+        android:name="com.codehunters.studtour.ui.profile.user_data.UserDataFragment"
+        tools:layout="@layout/fmt_user_data" />
+
+    <fragment
+        android:id="@+id/fmt_favorites_destination"
+        android:name="com.codehunters.studtour.ui.profile.favorites.FavoritesFragment"
+        tools:layout="@layout/fmt_favorites" />
+
+    <fragment
+        android:id="@+id/fmt_reminders_destination"
+        android:name="com.codehunters.studtour.ui.profile.reminders.RemindersFragment"
+        tools:layout="@layout/fmt_reminders" />
+
+    <fragment
+        android:id="@+id/fmt_login_destination"
+        android:name="com.codehunters.studtour.ui.profile.login.LoginFragment"
+        tools:layout="@layout/fmt_login" />
+
+    <dialog
+        android:id="@+id/dlg_logout_destination"
+        android:name="com.codehunters.studtour.ui.profile.logout.LogoutDialog" />
+
+    <fragment
+        android:id="@+id/fmt_login_input_destination"
+        android:name="com.codehunters.studtour.ui.profile.login_input.LoginInputFragment"
+        tools:layout="@layout/fmt_login_input" />
+
+    <fragment
+        android:id="@+id/fmt_registration_destination"
+        android:name="com.codehunters.studtour.ui.profile.registration.RegistrationFragment"
+        tools:layout="@layout/fmt_registration" />
 
 
 </navigation>

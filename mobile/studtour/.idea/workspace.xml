@@ -10,206 +10,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36243eb0-f834-4df2-86cc-8038cc7c68b0" name="Changes" comment="- created destination screen&#10;- created bottom navBar&#10;- created multiModules&#10;- created build configuration&#10;- created search">
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/App.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/HostActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/adapters/DestinationsAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/adapters/ViewPagerAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/adapters/viewholders/DormitoryViewHolder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/adapters/viewholders/LabVIewHolder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/interactors/AppInteractor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/interactors/SearchInteractor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/AppModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/LocaleStoreModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/NetworkModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/PresenterModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/RepositoryModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/destination_list/DestinationListFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/destination_list/DestinationListViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/destination_tab/DestinationTabFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/utils/Flow.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/utils/View.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/drw_destination_item_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/drw_error.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/drw_filter_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/drw_map_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/drw_search_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/drw_separator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/ac_host.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fmt_destination_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fmt_destination_tab.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/vh_dormitory_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/vh_lab_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/host_menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_booking.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_destination.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_events.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_host.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_profile.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-night/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-v23/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimen.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/consumer-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/ArticleInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/AuthorizationInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/CommitteeInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/CoordinatesInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/DatesInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/DetailsInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/DormitoryInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/EntitiesData.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/EntityType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/EventInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/Info.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/LabInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/MainInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/ReviewInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/RoomInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/RulesInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/ServicesInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/UniversityInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/UserInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locale_store/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locale_store/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locale_store/consumer-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locale_store/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locale_store/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locale_store/src/main/java/com/codehunters/locale_store/data_store/BookingEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locale_store/src/main/java/com/codehunters/locale_store/data_store/DataStoreService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locale_store/src/main/java/com/codehunters/locale_store/data_store/IDataStoreService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/consumer-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/InternetException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/RequestStatus.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/apiservice/AuthApiService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/apiservice/StudTourApiService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestAuth/AuthEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestAuth/UserEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestStudTour/ArticleEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestStudTour/DetailsEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestStudTour/DormitoryEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestStudTour/EventEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestStudTour/LabEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestStudTour/ReviewEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestStudTour/RoomEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestStudTour/UniversityEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestStudTour/details/CommitteeEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestStudTour/details/CoordinatesEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestStudTour/details/DatesEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestStudTour/details/Entity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestStudTour/details/MainInfoEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestStudTour/details/RulesEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/requestStudTour/details/ServicesEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/response/AuthData.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/response/ResponseData.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/response/ResponseLabsData.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/response/ResponseToken.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/response/ResponseUniversityData.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/data/response/UserData.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/interceptors/AuthorizationInterceptor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/mapping/ArticleEntityMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/mapping/AuthEntityMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/mapping/DetailsEntityMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/mapping/DormitoryEntityMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/mapping/EventEntityMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/mapping/LabEntityMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/mapping/ReviewEntityMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/mapping/RoomEntityMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/mapping/UniversityEntityMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/mapping/UserEntityMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/services/AuthService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/services/IAuthService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/services/IStudTourService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/services/StudTourService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presenter/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presenter/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presenter/consumer-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presenter/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presenter/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presenter/src/main/java/com/codehunters/presenter/AuthPresenter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presenter/src/main/java/com/codehunters/presenter/StudTourPresenter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presenter/src/main/java/com/codehunters/presenter/interfaces/IAuthPresenter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presenter/src/main/java/com/codehunters/presenter/interfaces/IStudTourPresenter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/consumer-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/auth/AuthRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/auth/IAuthRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/data_store/DataStoreRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/data_store/IDataStoreRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/mapping/ArticleInfoMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/mapping/AuthorizationInfoMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/mapping/DetailsMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/mapping/DormitoryInfoMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/mapping/EventInfoMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/mapping/LabInfoMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/mapping/ReviewInfoMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/mapping/RoomInfoMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/mapping/UniversityInfoMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/mapping/UserInfoMapping.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/stud_tour/IStudTourRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/stud_tour/StudTourRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/drawable/v_ic_booking.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/drawable/v_ic_destination.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/drawable/v_ic_event.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/drawable/v_ic_filter.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/drawable/v_ic_map.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/drawable/v_ic_place_marker.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/drawable/v_ic_profile.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/drawable/v_ic_search.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/main/MainFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/main/MainViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/drawable/v_ic_back_arrow.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/HostActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/HostActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/interactors/AppInteractor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/interactors/AppInteractor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/AppModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/utils/View.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/utils/View.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ac_host.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ac_host.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_booking.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_booking.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_events.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_events.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_profile.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,12 +65,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Data Class" />
-        <option value="Kotlin Enum" />
         <option value="Kotlin File" />
-        <option value="Kotlin Class" />
-        <option value="layoutResourceFile" />
         <option value="valueResourceFile" />
         <option value="resourceFile" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Enum" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -278,7 +101,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DEBUGGABLE_DEVICE" value="Pixel_2_API_30 [emulator-5554]" />
+    <property name="DEBUGGABLE_DEVICE" value="samsung-sm_g780g-adb-RF8T201B7KD-c2hBQj._adb-tls-connect._tcp." />
     <property name="DEBUGGABLE_PROCESS" value="com.codehunters.studtour" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -287,13 +110,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/navigation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/navigation" />
-      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/navigation" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/destination" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.codehunters.studtour.ui.profile.favorites" />
+      <recent name="com.codehunters.studtour.ui.profile" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.codehunters.studtour.ui.profile.login" />
     </key>
   </component>
   <component name="RunManager">
@@ -373,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676640414787</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- created destination screen&#10;- created bottom navBar&#10;- created multiModules&#10;- created build configuration&#10;- created search">
+      <created>1676706693936</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676706693937</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -395,21 +236,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/destination_list/DestinationListFragment.kt</url>
-          <line>52</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/destination_list/DestinationListViewModel.kt</url>
-          <line>76</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/destination_list/DestinationListViewModel.kt</url>
-          <line>77</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/network/src/main/java/com/codehunters/network/RequestStatus.kt</url>
           <line>8</line>
@@ -434,6 +260,29 @@
           <url>file://$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/adapters/viewholders/DormitoryViewHolder.kt</url>
           <line>21</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/profile/login_input/LoginInputFragment.kt</url>
+          <line>33</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/profile/ProfileViewModel.kt</url>
+          <line>47</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/profile/ProfileViewModel.kt</url>
+          <line>49</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/interactors/AppInteractor.kt</url>
+          <line>9</line>
+          <properties class="com.codehunters.studtour.interactors.AppInteractor" method="isAuthorized">
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

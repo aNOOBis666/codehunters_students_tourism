@@ -68,4 +68,52 @@
         <item name="cornerSizeTopRight">12dp</item>
     </style>
 
+    <style name="RoundPoster">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/AlertDialogTitleStyle</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/AlertMessageStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/AlertButtonStylePositive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AlertButtonStyleNegative</item>
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearanceOverlay.MaterialAlertDialog.Rounded
+        </item>
+    </style>
+
+    <style name="AlertDialogTitleStyle" parent="@style/MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textAppearance">@style/AlertTitleStyle</item>
+    </style>
+
+    <style name="AlertTitleStyle">
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="AlertMessageStyle" parent="@style/MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">@color/text_inactive</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialAlertDialog.Rounded" parent="">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="AlertButtonStylePositive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:textColor">@color/error_primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AlertButtonStyleNegative" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:textColor">@color/text_inactive</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
 </resources>

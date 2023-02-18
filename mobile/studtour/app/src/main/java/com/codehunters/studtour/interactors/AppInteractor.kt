@@ -9,4 +9,6 @@ class AppInteractor(
     val isAuthorized: Flow<Boolean>
         get() = authPresenter.isAuthorized
 
+    suspend fun logOut() = authPresenter.logOut()
+
 }

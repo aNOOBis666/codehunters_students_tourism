@@ -14,6 +14,7 @@
     <color name="background_additional">#1F00A19A</color>
 
     <color name="text_primary">#1C1B1F</color>
+    <color name="text_secondary">#F5F6F9</color>
     <color name="text_inactive">#49454F</color>
 
     <color name="stroke_color">#CFCFD0</color>

@@ -14,8 +14,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="v_ic_place_marker" />
-                            <entry key="sourceFile" value="$USER_HOME$/Downloads/Icons.svg" />
+                            <entry key="outputName" value="v_ic_back_arrow" />
+                            <entry key="sourceFile" value="$USER_HOME$/Downloads/leading-icon.svg" />
                           </map>
                         </option>
                       </PersistentState>
