@@ -20,9 +20,18 @@ export class AuthModel {
         };
     }
     async me(token) {
-        console.log(token);
         const { data } = await axios.get("https://stud-api.sabir.pro/me", {
             headers: { Authorization: token },
+        });
+        return {
+            data,
+        };
+    }
+    async updateMe(info, token) {
+        const { data } = await axios.put("https://stud-api.sabir.pro/users", info, {
+            headers: {
+                Authorization: token,
+            },
         });
         return {
             data,
