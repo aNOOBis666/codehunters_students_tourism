@@ -19,4 +19,13 @@ export class AuthModel {
             data,
         };
     }
+    async me(token) {
+        console.log(token);
+        const { data } = await axios.get("https://stud-api.sabir.pro/me", {
+            headers: { Authorization: token },
+        });
+        return {
+            data,
+        };
+    }
 }

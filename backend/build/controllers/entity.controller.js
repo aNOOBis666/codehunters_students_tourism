@@ -2,6 +2,11 @@ import { EntityModel } from "../models/entity.model.js";
 const entityModel = new EntityModel();
 export class EntityController {
     async getDormitories(req, res, next) {
+        const { city } = req.query;
+        if (city) {
+            const data = await entityModel.getDormitories("city", String(city));
+            return res.json(data);
+        }
         const { data } = await entityModel.getDormitories();
         return res.json(data);
     }

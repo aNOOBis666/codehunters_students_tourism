@@ -21,4 +21,15 @@ export class AuthController {
         const { data } = await authModel.register(email, password);
         return res.json(data);
     }
+    async me(req, res, next) {
+        const token = req.header("Authorization");
+        if (!token) {
+            return res.status(401).json({ message: "Не указан токен авторизации" });
+        }
+        const { data } = await authModel.me(token);
+        if (!data) {
+            return res.status(401).json({ msg: "Юзер не найден" });
+        }
+        return res.json(data);
+    }
 }

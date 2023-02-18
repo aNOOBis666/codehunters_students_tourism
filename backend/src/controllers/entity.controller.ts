@@ -1,5 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import { EntityModel } from "../models/entity.model.js";
+import * as querystring from "querystring";
 
 const entityModel = new EntityModel();
 
@@ -37,6 +38,11 @@ export class EntityController implements IEntityController {
     res: Response,
     next: NextFunction
   ): Promise<Response> {
+    const { city } = req.query;
+    if (city) {
+      const data = await entityModel.getDormitories("city", String(city));
+      return res.json(data);
+    }
     const { data } = await entityModel.getDormitories();
     return res.json(data);
   }

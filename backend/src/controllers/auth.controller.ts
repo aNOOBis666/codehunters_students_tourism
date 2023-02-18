@@ -14,6 +14,12 @@ interface IAuthController {
     res: Response,
     next: NextFunction
   ) => Promise<Response | Error>;
+
+  me: (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ) => Promise<Response | Error>;
 }
 
 export class AuthController implements IAuthController {
@@ -44,6 +50,22 @@ export class AuthController implements IAuthController {
         .json({ message: "Некорректно указана почта или пароль" });
     }
     const { data } = await authModel.register(email, password);
+    return res.json(data);
+  }
+
+  async me(
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ): Promise<Response | Error> {
+    const token = req.header("Authorization");
+    if (!token) {
+      return res.status(401).json({ message: "Не указан токен авторизации" });
+    }
+    const { data } = await authModel.me(token);
+    if (!data) {
+      return res.status(401).json({ msg: "Юзер не найден" });
+    }
     return res.json(data);
   }
 }

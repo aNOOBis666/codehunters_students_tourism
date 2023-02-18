@@ -14,6 +14,8 @@ app.post("/register", authController.register);
 
 app.post("/login", authController.login);
 
+app.get("/me", authController.me);
+
 app.get("/lab", entityController.getLabs);
 
 app.get("/university", entityController.getUniversities);
