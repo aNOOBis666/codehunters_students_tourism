@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/background_additional"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/v_ic_back_arrow"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar"
+            app:layout_constraintStart_toStartOf="@id/toolbar"
+            app:layout_constraintTop_toTopOf="@id/toolbar"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar"
+            app:layout_constraintStart_toEndOf="@id/back"
+            app:layout_constraintTop_toTopOf="@id/toolbar"
+            tools:text="Студенческое общежитие Студенческое общежитие" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/photos"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:dotsColor="@color/dots_inactive"
+            app:dotsCornerRadius="6dp"
+            app:dotsSize="6dp"
+            app:dotsSpacing="4dp"
+            app:dotsWidthFactor="3.5"
+            app:layout_constraintBottom_toBottomOf="@id/photos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:progressMode="true"
+            app:selectedDotColor="@color/white" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/text_primary"
+            android:textSize="28sp"
+            app:layout_constraintTop_toBottomOf="@id/photos"
+            tools:text="Студенческое общежитие ПВГУС" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_inactive"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            tools:text="ФГБОУ ВО «Поволжский государственный университет»" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/dormitory_address"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/subtitle" />
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/v_ic_place_marker"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/address"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/full_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:gravity="start"
+            android:textColor="@color/text_inactive"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/map"
+            app:layout_constraintTop_toTopOf="@id/map"
+            tools:text="ул. Ленинградская, 29, Тольятти, Самарская область" />
+
+        <TextView
+            android:id="@+id/living_conditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/living_conditions"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/map" />
+
+        <ImageView
+            android:id="@+id/ic_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/v_ic_food"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/food" />
+
+        <TextView
+            android:id="@+id/food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="start"
+            android:textColor="@color/text_inactive"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/ic_food"
+            app:layout_constraintTop_toBottomOf="@id/living_conditions"
+            tools:text="еда" />
+
+        <ImageView
+            android:id="@+id/ic_dates_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/v_ic_calendar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/dates_range" />
+
+        <TextView
+            android:id="@+id/dates_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="start"
+            android:textColor="@color/text_inactive"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/ic_food"
+            app:layout_constraintTop_toBottomOf="@id/food"
+            tools:text="от 2 до 40 дней" />
+
+        <TextView
+            android:id="@+id/rooms_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/rooms"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/dates_range" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/rooms_title" />
+
+        <TextView
+            android:id="@+id/incoming_conditions_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/incoming_conditions"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/rooms" />
+
+        <TextView
+            android:id="@+id/incoming_conditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/incoming_conditions_title"
+            tools:text="При заселение в общежитие требуется:
+- паспорт гражданина, или иного документа, удостоверяющего личность;
+- квитанции об оплате за проживание в общежитии.
+- документ, подтверждающий обучение в образовательном учреждении высшего или среднего профессионального образования." />
+
+        <TextView
+            android:id="@+id/contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/contacts"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/incoming_conditions" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:textColor="@color/text_inactive"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/contacts"
+            tools:text="Студтуризм ПВГУС 2022" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:autoLink="phone"
+            android:gravity="start"
+            android:textColor="@color/accent_primary"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            tools:text="+7 (945) 748-23-23" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:autoLink="email"
+            android:gravity="start"
+            android:textColor="@color/accent_primary"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/phone"
+            tools:text="st@tolgas.ru" />
+
+        <TextView
+            android:id="@+id/documents_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/documents"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/email" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/documents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/documents_layout" />
+
+        <Button
+            android:id="@+id/booking"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/drw_primary_button_background"
+            android:text="@string/book"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/documents" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

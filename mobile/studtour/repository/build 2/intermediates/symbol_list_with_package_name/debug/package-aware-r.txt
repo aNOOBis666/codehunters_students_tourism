@@ -1,0 +1,18 @@
+com.codehunters.repository
+drawable ic_header
+drawable ic_human
+drawable v_ic_arrow
+drawable v_ic_back_arrow
+drawable v_ic_booking
+drawable v_ic_calendar
+drawable v_ic_destination
+drawable v_ic_event
+drawable v_ic_filter
+drawable v_ic_food
+drawable v_ic_item_favorites
+drawable v_ic_item_notifications
+drawable v_ic_item_profile
+drawable v_ic_map
+drawable v_ic_place_marker
+drawable v_ic_profile
+drawable v_ic_search

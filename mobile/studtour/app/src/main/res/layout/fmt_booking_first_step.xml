@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/contacts"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/student_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:checked="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/author" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/booking_radio_student"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/student_button"
+            app:layout_constraintStart_toEndOf="@id/student_button"
+            app:layout_constraintTop_toTopOf="@id/student_button" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/organization_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/student_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/booking_radio_organization"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/organization_button"
+            app:layout_constraintStart_toEndOf="@id/organization_button"
+            app:layout_constraintTop_toTopOf="@id/organization_button" />
+
+        <TextView
+            android:id="@+id/placement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/booking_placement"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/organization_button" />
+
+        <FrameLayout
+            android:id="@+id/room_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/drw_spinner_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/placement">
+
+            <Spinner
+                android:id="@+id/room_type"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:backgroundTint="@color/text_primary"
+                android:checked="true" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/dates_range_frame"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/drw_spinner_background"
+            app:layout_constraintTop_toBottomOf="@id/room_frame">
+
+            <TextView
+                android:id="@id/dates_range"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="32dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:text="@string/booking_choose_date"
+                android:textColor="@color/text_inactive"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:src="@drawable/v_ic_calendar"
+                app:tint="@color/text_primary" />
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

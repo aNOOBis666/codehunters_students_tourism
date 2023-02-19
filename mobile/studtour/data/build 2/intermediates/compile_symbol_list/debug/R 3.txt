@@ -1,0 +1,6 @@
+int drawable v_ic_booking 0x0
+int drawable v_ic_destination 0x0
+int drawable v_ic_event 0x0
+int drawable v_ic_filter 0x0
+int drawable v_ic_map 0x0
+int drawable v_ic_profile 0x0
