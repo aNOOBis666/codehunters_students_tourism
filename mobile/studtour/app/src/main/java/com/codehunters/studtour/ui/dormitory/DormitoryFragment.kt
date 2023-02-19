@@ -43,6 +43,7 @@ class DormitoryFragment : Fragment(R.layout.fmt_dormitory) {
         initIncomingConditions()
         initContacts()
         initDocs()
+        initShare()
         viewBinding.rooms.adapter = roomsAdapter
         viewModel.uiState.observe(this, observer = ::initRooms)
         viewModel.failureState.observe(this, observer = ::renderError)
@@ -118,5 +119,22 @@ class DormitoryFragment : Fragment(R.layout.fmt_dormitory) {
 
     private fun renderError(throwable: Throwable) {
         viewBinding.root.showSnackbar(throwable.message ?: getString(R.string.error_default_text))
+    }
+
+    private fun initShare() {
+        viewBinding.share.setOnClickListener {
+            val address: String = viewModel.dormitoryItem?.details?.mainInfo?.city + " " + viewModel.dormitoryItem?.details?.mainInfo?.street + " " + viewModel.dormitoryItem?.details?.mainInfo?.houseNumber
+            val intent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(
+                    Intent.EXTRA_TEXT, viewModel.dormitoryItem?.details?.mainInfo?.name + '\n'
+                            + address + '\n' + viewModel.dormitoryItem?.details?.rules?.committee?.email
+                )
+                type = "text/plain"
+            }
+
+            val shareIntent = Intent.createChooser(intent, null)
+            startActivity(shareIntent)
+        }
     }
 }
