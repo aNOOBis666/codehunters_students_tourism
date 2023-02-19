@@ -4,6 +4,8 @@
 
 ## Установка
 * Скачать приложение можно по [ссылке](https://github.com/aNOOBis666/codehunters_students_tourism/blob/main/app-debug.apk)
+* При входе в разделы, не указанные в релизованной функциональности - произойдет краш, из-за отсутствия заглушек
+* В следствии сжатости сроков, часть функциональности реализована "на скорую руку", для уменьшие времязатрат на разработку во время хакатона
 
 
 ## Релизованная функциональность:
@@ -34,4 +36,4 @@
 * Coroutines for multi-threading requests
 * Hilt for DI
 * Okhttp3, Retrofit, Glide for working with remote requests
-* Navigation for rooting between components
+* Navigation for routing between components
