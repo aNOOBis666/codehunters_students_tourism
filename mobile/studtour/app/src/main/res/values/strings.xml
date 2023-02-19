@@ -1,3 +1,58 @@
 <resources>
     <string name="app_name">studtour</string>
+
+    <string name="bottom_nav_title_destination">Куда поехать</string>
+    <string name="bottom_nav_title_event">События</string>
+    <string name="bottom_nav_title_booking">Бронирования</string>
+    <string name="bottom_nav_title_profile">Профиль</string>
+
+    <string name="destination_search_hint">Куда хотите поехать?</string>
+    <string name="destination_filter">Фильтр</string>
+    <string name="destination_dormitories">Поиск жилья</string>
+    <string name="destination_science">Наука</string>
+
+    <string name="error_default_text">Кажется что-то пошло не так, повторите попытку позднее</string>
+
+    <string name="profile_title">Мой профиль</string>
+    <string name="profile_user_item_title">Данные</string>
+    <string name="profile_favorite_item_title">Избранное</string>
+    <string name="profile_notification_item_title">Уведомления</string>
+
+    <string name="profile_button_login_text">Войти</string>
+    <string name="profile_login_text">Вход</string>
+    <string name="profile_registration_text">Регистрация</string>
+    <string name="profile_next_button_text">Продолжить</string>
+    <string name="profile_button_registration_text">Зарегистрироваться</string>
+    <string name="profile_button_logout_text">Выйти</string>
+
+    <string name="profile_dialog_logout_title">Выход</string>
+    <string name="profile_dialog_logout_message">Вы действительно хотите выйти?</string>
+    <string name="profile_dialog_logout_positive_button">Выйти</string>
+    <string name="profile_dialog_logout_negative_button">Отмена</string>
+
+    <string name="profile_login_title">Путешествуй по России</string>
+    <string name="profile_login_subtitle">Получи возможность посетить более 100 городов России, принять участие в уникальных мероприятиях, познакомиться с наукой и открыть для себя что-то новое.</string>
+
+    <string name="profile_login_input_email_hint">Электронная почта</string>
+    <string name="profile_login_input_password_hint">Пароль</string>
+    <string name="profile_login_input_incorrect_text">Проверьте правильность введённого пароля</string>
+
+    <string name="dormitory_address">Адрес</string>
+    <string name="living_conditions">Условия проживания</string>
+    <string name="rooms">Комнаты</string>
+    <string name="incoming_conditions">Условия заселения</string>
+    <string name="contacts">Контакты</string>
+    <string name="documents">Документы</string>
+    <string name="document">Договор оказания услуг</string>
+    <string name="book">Забронировать</string>
+
+    <string name="booking_toolbar_title">Бронирование размещения</string>
+    <string name="booking_radio_student">Студент</string>
+    <string name="booking_radio_organization">Организация</string>
+    <string name="booking_placement">Размещение</string>
+    <string name="booking_dates">Даты</string>
+    <string name="booking_choose_date">Выберите дату</string>
+    <string name="booking_empty_field">Проверьте заполненность полей</string>
+
+    <string name="reminder_title">Напоминание бронирования</string>
 </resources>

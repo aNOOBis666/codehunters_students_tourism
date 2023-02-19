@@ -1,0 +1,8 @@
+R_DEF: Internal format may change without notice
+local
+drawable v_ic_booking
+drawable v_ic_destination
+drawable v_ic_event
+drawable v_ic_filter
+drawable v_ic_map
+drawable v_ic_profile

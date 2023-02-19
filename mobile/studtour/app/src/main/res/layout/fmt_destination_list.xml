@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/search_box"
+        android:background="@color/background_additional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingVertical="8dp">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/drw_search_background"
+        android:drawableStart="@drawable/v_ic_search"
+        android:drawablePadding="8dp"
+        android:hint="@string/destination_search_hint"
+        android:paddingHorizontal="12dp"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/map"
+        tools:text="Найдено: 20" />
+
+    <TextView
+        android:id="@+id/filter"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/drw_filter_background"
+        android:drawableStart="@drawable/v_ic_filter"
+        android:gravity="center"
+        android:paddingEnd="14dp"
+        android:text="@string/destination_filter"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toStartOf="@+id/map"
+        app:layout_constraintTop_toTopOf="@+id/map" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/map"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/drw_map_background"
+        android:scaleType="centerInside"
+        android:src="@drawable/v_ic_map"
+        android:tint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_box" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/destinations"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        tools:listitem="@layout/vh_dormitory_item"
+        app:layout_constraintTop_toBottomOf="@id/map"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/destination_navigation"
+    app:startDestination="@+id/fmt_main_destination">
+
+    <fragment
+        android:id="@+id/fmt_main_destination"
+        android:name="com.codehunters.studtour.ui.destination_tab.DestinationTabFragment"
+        tools:layout="@layout/fmt_destination_tab" />
+
+    <fragment
+        android:id="@+id/fmt_dormitory_destination"
+        android:name="com.codehunters.studtour.ui.dormitory.DormitoryFragment"
+        tools:layout="@layout/fmt_dormitory" />
+
+    <fragment
+        android:id="@+id/fmt_booking_destination"
+        android:name="com.codehunters.studtour.ui.booking.BookingFragment"
+        tools:layout="@layout/fmt_booking" />
+
+</navigation>

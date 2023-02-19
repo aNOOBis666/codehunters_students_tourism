@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Studtour" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_primary</item>
+        <item name="colorPrimaryDark">@color/background_additional</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="colorControlNormal">@color/accent_primary</item>
+    </style>
+</resources>
