@@ -1,5 +1,9 @@
 package com.codehunters.data
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class RoomInfo(
     val userId: String,
     val universityId: String,
@@ -11,4 +15,4 @@ data class RoomInfo(
     val updatedTimestamp: Long,
     val onModeration: Boolean,
     val details: DetailsInfo,
-): EntitiesData()
+): EntitiesData(), Parcelable

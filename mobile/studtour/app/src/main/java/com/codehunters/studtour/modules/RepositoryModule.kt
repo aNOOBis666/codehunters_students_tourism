@@ -1,5 +1,6 @@
 package com.codehunters.studtour.modules
 
+import com.codehunters.locale_store.booking.BookingDatabase
 import com.codehunters.locale_store.data_store.IDataStoreService
 import com.codehunters.network.services.IAuthService
 import com.codehunters.network.services.IStudTourService
@@ -7,6 +8,8 @@ import com.codehunters.repository.auth.AuthRepository
 import com.codehunters.repository.auth.IAuthRepository
 import com.codehunters.repository.data_store.DataStoreRepository
 import com.codehunters.repository.data_store.IDataStoreRepository
+import com.codehunters.repository.reminders.IRemindersRepository
+import com.codehunters.repository.reminders.RemindersRepository
 import com.codehunters.repository.stud_tour.IStudTourRepository
 import com.codehunters.repository.stud_tour.StudTourRepository
 import dagger.Module
@@ -33,4 +36,8 @@ class RepositoryModule {
     @Singleton
     fun provideDataStoreRepository(dataStoreService: IDataStoreService): IDataStoreRepository =
         DataStoreRepository(dataStoreService)
+
+    @Provides
+    @Singleton
+    fun provideReminderRepository(db: BookingDatabase): IRemindersRepository = RemindersRepository(db)
 }

@@ -26,4 +26,8 @@ class StudTourPresenter(
     override suspend fun getLabs(labID: String): List<LabInfo> {
         return studTourRepository.getLabs(labID)
     }
+
+    override suspend fun postBooking(bookingInfo: BookingInfo): Boolean {
+        return studTourRepository.postBooking(bookingInfo)
+    }
 }

@@ -1,5 +1,7 @@
 package com.codehunters.studtour.navigation
 
+import com.codehunters.data.DormitoryInfo
+import com.codehunters.data.RoomInfo
 import kotlinx.coroutines.flow.Flow
 
 interface INavigation {
@@ -16,4 +18,6 @@ interface INavigation {
     suspend fun onShowRegistration(stepNum: Int)
 
     suspend fun onShowProfile()
+    suspend fun onShowDormitory(dormitoryItem: DormitoryInfo)
+    suspend fun onShowBooking(roomsList: List<RoomInfo>, dormitory: DormitoryInfo)
 }

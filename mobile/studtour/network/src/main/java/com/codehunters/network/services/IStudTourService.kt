@@ -1,5 +1,6 @@
 package com.codehunters.network.services
 
+import com.codehunters.network.data.requestBooking.BookingData
 import com.codehunters.network.data.requestStudTour.*
 
 interface IStudTourService {
@@ -11,4 +12,6 @@ interface IStudTourService {
     suspend fun getRooms(roomID: String): List<RoomEntity>
     suspend fun getEvents(eventID: String): List<EventEntity>
     suspend fun getLabs(labID: String): List<LabEntity>
+
+    suspend fun postBooking(bookingData: BookingData): Boolean
 }

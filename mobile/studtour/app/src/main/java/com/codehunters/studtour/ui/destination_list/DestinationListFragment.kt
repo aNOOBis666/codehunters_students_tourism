@@ -7,6 +7,7 @@ import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import by.kirich1409.viewbindingdelegate.viewBinding
+import com.codehunters.data.DormitoryInfo
 import com.codehunters.data.EntitiesData
 import com.codehunters.studtour.R
 import com.codehunters.studtour.adapters.DestinationsAdapter
@@ -62,6 +63,6 @@ class DestinationListFragment : Fragment(R.layout.fmt_destination_list) {
     }
 
     private fun onItemCLick(entityData: EntitiesData) {
-
+        if (entityData is DormitoryInfo) viewModel.onShowDormitoryItem(entityData)
     }
 }

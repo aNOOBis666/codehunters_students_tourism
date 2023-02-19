@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+    id 'kotlin-parcelize'
     id 'org.jetbrains.kotlin.plugin.parcelize'
     id 'org.jetbrains.kotlin.plugin.serialization'
 }
@@ -54,6 +55,7 @@ dependencies {
 
     implementation libraries.hilt
     implementation libraries.lifecycleProcess
+    implementation 'androidx.room:room-ktx:2.4.2'
     kapt libraries.hiltCompiler
     implementation libraries.hiltFragment
 
@@ -63,4 +65,10 @@ dependencies {
 
     implementation libraries.glide
     implementation libraries.glideIntegration
+
+    implementation libraries.dotsIndicator
+
+    implementation libraries.roomRuntime
+    kapt libraries.roomCompiler
+    implementation libraries.roomCoroutines
 }

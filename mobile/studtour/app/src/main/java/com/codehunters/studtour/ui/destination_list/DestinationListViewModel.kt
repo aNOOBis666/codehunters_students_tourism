@@ -8,6 +8,7 @@ import com.codehunters.data.LabInfo
 import com.codehunters.presenter.interfaces.IStudTourPresenter
 import com.codehunters.studtour.interactors.search
 import com.codehunters.studtour.interactors.searchQuery
+import com.codehunters.studtour.navigation.INavigation
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.FlowPreview
@@ -19,7 +20,8 @@ import javax.inject.Inject
 
 @HiltViewModel
 class DestinationListViewModel @Inject constructor(
-    private val studTourPresenter: IStudTourPresenter
+    private val studTourPresenter: IStudTourPresenter,
+    private val navigation: INavigation
 ): ViewModel() {
 
     companion object {
@@ -99,6 +101,12 @@ class DestinationListViewModel @Inject constructor(
             }.onFailure {
                 _failureState.tryEmit(it)
             }
+        }
+    }
+
+    fun onShowDormitoryItem(dormitoryInfo: DormitoryInfo) {
+        viewModelScope.launch(Dispatchers.IO) {
+            navigation.onShowDormitory(dormitoryInfo)
         }
     }
 }

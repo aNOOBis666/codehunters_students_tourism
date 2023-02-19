@@ -10,4 +10,6 @@ interface IStudTourPresenter {
     suspend fun getRooms(roomID: String = String()): List<RoomInfo>
     suspend fun getEvents(eventID: String = String()): List<EventInfo>
     suspend fun getLabs(labID: String = String()): List<LabInfo>
+
+    suspend fun postBooking(bookingInfo: BookingInfo): Boolean
 }

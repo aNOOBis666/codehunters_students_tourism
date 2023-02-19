@@ -1,5 +1,9 @@
 package com.codehunters.data
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class MainInfo(
     val name: String,
     val shortName: String,
@@ -35,4 +39,4 @@ data class MainInfo(
     val description: String,
     val amount: String,
     val price: String,
-)
+): Parcelable

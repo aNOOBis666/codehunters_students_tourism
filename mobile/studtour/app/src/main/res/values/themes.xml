@@ -72,6 +72,10 @@
         <item name="cornerSize">50%</item>
     </style>
 
+    <style name="Corner12Size">
+        <item name="cornerSize">12dp</item>
+    </style>
+
     <style name="AlertDialogStyle" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
         <item name="materialAlertDialogTitleTextStyle">@style/AlertDialogTitleStyle</item>
         <item name="materialAlertDialogBodyTextStyle">@style/AlertMessageStyle</item>

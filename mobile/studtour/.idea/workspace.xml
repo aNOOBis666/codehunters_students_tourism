@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36243eb0-f834-4df2-86cc-8038cc7c68b0" name="Changes" comment="- created navigation module&#10;- created profile screen&#10;- created login screen&#10;- created login input screen">
+    <list default="true" id="36243eb0-f834-4df2-86cc-8038cc7c68b0" name="Changes" comment="- created dormitory screen&#10;- created pushes&#10;- created bookings">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -17,23 +19,46 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/AppModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/LocaleStoreModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/LocaleStoreModule.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/NetworkModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/NetworkModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/PresenterModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/PresenterModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/RepositoryModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/modules/RepositoryModule.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/navigation/INavigation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/navigation/INavigation.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/navigation/Navigation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/navigation/Navigation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/profile/login_input/LoginInputFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/profile/login_input/LoginInputFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/profile/login_input/LoginInputViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/profile/login_input/LoginInputViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/profile/registration/RegistrationFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/profile/registration/RegistrationFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/profile/registration/RegistrationViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/profile/registration/RegistrationViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fmt_registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fmt_registration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/destination_list/DestinationListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/destination_list/DestinationListFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/destination_list/DestinationListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/destination_list/DestinationListViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/utils/View.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/utils/View.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drw_destination_poster_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/drw_destination_poster_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_destination.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_destination.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimen.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/apiservice/AuthApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/apiservice/AuthApiService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/CommitteeInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/CommitteeInfo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/CoordinatesInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/CoordinatesInfo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/DatesInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/DatesInfo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/DetailsInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/DetailsInfo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/DormitoryInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/DormitoryInfo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/Info.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/Info.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/MainInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/MainInfo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/RoomInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/RoomInfo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/RulesInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/RulesInfo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/ServicesInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/codehunters/data/ServicesInfo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locale_store/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/locale_store/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/apiservice/StudTourApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/apiservice/StudTourApiService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/services/IStudTourService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/services/IStudTourService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/services/StudTourService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/main/java/com/codehunters/network/services/StudTourService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presenter/src/main/java/com/codehunters/presenter/StudTourPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/presenter/src/main/java/com/codehunters/presenter/StudTourPresenter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presenter/src/main/java/com/codehunters/presenter/interfaces/IStudTourPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/presenter/src/main/java/com/codehunters/presenter/interfaces/IStudTourPresenter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/repository/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/stud_tour/IStudTourRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/stud_tour/IStudTourRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/stud_tour/StudTourRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/codehunters/repository/stud_tour/StudTourRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/drawable/v_ic_item_notifications.xml" beforeDir="false" />
@@ -43,7 +68,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RF8T201B7KD]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[adb-RF8T201B7KD-c2hBQj._adb-tls-connect._tcp.]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -72,11 +97,12 @@
         <option value="Kotlin Data Class" />
         <option value="Kotlin File" />
         <option value="valueResourceFile" />
-        <option value="resourceFile" />
-        <option value="Kotlin Interface" />
         <option value="Kotlin Enum" />
+        <option value="resourceFile" />
         <option value="layoutResourceFile" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
       </list>
     </option>
   </component>
@@ -115,7 +141,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -226,7 +252,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676729784154</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="-registration updated&#10;- endpoints moved from studtourism to ours back">
+      <created>1676736174678</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676736174678</updated>
+    </task>
+    <task id="LOCAL-00005" summary="-registration updated&#10;-profile icon changed">
+      <created>1676736214269</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676736214269</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,36 +284,14 @@
     <MESSAGE value="init mobile" />
     <MESSAGE value="- created destination screen&#10;- created bottom navBar&#10;- created multiModules&#10;- created build configuration&#10;- created search" />
     <MESSAGE value="- created navigation module&#10;- created profile screen&#10;- created login screen&#10;- created login input screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="- created navigation module&#10;- created profile screen&#10;- created login screen&#10;- created login input screen" />
+    <MESSAGE value="-registration updated&#10;- endpoints moved from studtourism to ours back" />
+    <MESSAGE value="-registration updated&#10;-profile icon changed" />
+    <MESSAGE value="- created dormitory screen&#10;- created pushes&#10;- created bookings" />
+    <option name="LAST_COMMIT_MESSAGE" value="- created dormitory screen&#10;- created pushes&#10;- created bookings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/network/src/main/java/com/codehunters/network/RequestStatus.kt</url>
-          <line>8</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/network/src/main/java/com/codehunters/network/RequestStatus.kt</url>
-          <line>9</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/network/src/main/java/com/codehunters/network/RequestStatus.kt</url>
-          <line>10</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/adapters/viewholders/DormitoryViewHolder.kt</url>
-          <line>20</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/adapters/viewholders/DormitoryViewHolder.kt</url>
-          <line>21</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/profile/login_input/LoginInputFragment.kt</url>
           <line>34</line>
@@ -289,13 +307,30 @@
           <line>49</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-function">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/interactors/AppInteractor.kt</url>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/network/src/main/java/com/codehunters/network/services/StudTourService.kt</url>
+          <line>64</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/network/src/main/java/com/codehunters/network/RequestStatus.kt</url>
+          <line>8</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/network/src/main/java/com/codehunters/network/RequestStatus.kt</url>
           <line>9</line>
-          <properties class="com.codehunters.studtour.interactors.AppInteractor" method="isAuthorized">
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/network/src/main/java/com/codehunters/network/RequestStatus.kt</url>
+          <line>10</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/codehunters/studtour/ui/booking/BookingViewModel.kt</url>
+          <line>44</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

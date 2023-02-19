@@ -36,4 +36,23 @@
     <string name="profile_login_input_email_hint">Электронная почта</string>
     <string name="profile_login_input_password_hint">Пароль</string>
     <string name="profile_login_input_incorrect_text">Проверьте правильность введённого пароля</string>
+
+    <string name="dormitory_address">Адрес</string>
+    <string name="living_conditions">Условия проживания</string>
+    <string name="rooms">Комнаты</string>
+    <string name="incoming_conditions">Условия заселения</string>
+    <string name="contacts">Контакты</string>
+    <string name="documents">Документы</string>
+    <string name="document">Договор оказания услуг</string>
+    <string name="book">Забронировать</string>
+
+    <string name="booking_toolbar_title">Бронирование размещения</string>
+    <string name="booking_radio_student">Студент</string>
+    <string name="booking_radio_organization">Организация</string>
+    <string name="booking_placement">Размещение</string>
+    <string name="booking_dates">Даты</string>
+    <string name="booking_choose_date">Выберите дату</string>
+    <string name="booking_empty_field">Проверьте заполненность полей</string>
+
+    <string name="reminder_title">Напоминание бронирования</string>
 </resources>

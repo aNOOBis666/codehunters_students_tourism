@@ -26,6 +26,7 @@ class NetworkModule {
     }
 
     private val baseUrl: String = "https://codehunters-service.onrender.com/"
+    private val bookingUrl: String = "https://stud-api.sabir.pro/"
 
     private val converterFactory = Json {
         isLenient = true
@@ -43,7 +44,7 @@ class NetworkModule {
 
     @Provides
     @Singleton
-    fun provideStudTourService(): IStudTourService = StudTourService(baseUrl, okHttpClient, converterFactory)
+    fun provideStudTourService(): IStudTourService = StudTourService(baseUrl, bookingUrl, okHttpClient, converterFactory)
 
     @Provides
     @Singleton

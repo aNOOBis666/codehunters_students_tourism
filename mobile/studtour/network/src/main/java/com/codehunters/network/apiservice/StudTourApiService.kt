@@ -1,10 +1,13 @@
 package com.codehunters.network.apiservice
 
+import com.codehunters.network.data.requestBooking.BookingData
 import com.codehunters.network.data.response.ResponseData
 import com.codehunters.network.data.response.ResponseLabsData
 import com.codehunters.network.data.response.ResponseUniversityData
 import retrofit2.Response
+import retrofit2.http.Body
 import retrofit2.http.GET
+import retrofit2.http.POST
 import retrofit2.http.Path
 
 interface StudTourApiService {
@@ -26,7 +29,7 @@ interface StudTourApiService {
     ): Response<List<ResponseData>>
 
 //  Receive Rooms
-    @GET("rooms/{roomID}")
+    @GET("room/{roomID}")
     suspend fun getRooms(
     @Path("roomID") roomID: String
     ): Response<List<ResponseData>>
@@ -41,5 +44,10 @@ interface StudTourApiService {
     @GET("lab/{labID}")
     suspend fun getLabs(
     @Path("labID") labID: String
+    ): Response<List<ResponseLabsData>>
+
+    @POST("bookings")
+    suspend fun postBooking(
+        @Body bookingData: BookingData
     ): Response<List<ResponseLabsData>>
 }

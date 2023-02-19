@@ -1,6 +1,7 @@
 package com.codehunters.network.services
 
 import com.codehunters.network.apiservice.StudTourApiService
+import com.codehunters.network.data.requestBooking.BookingData
 import com.codehunters.network.data.requestStudTour.*
 import com.codehunters.network.interceptors.AuthorizationInterceptor
 import com.codehunters.network.mapping.*
@@ -11,6 +12,7 @@ import retrofit2.Retrofit
 
 class StudTourService(
     baseUrl: String,
+    bookingUrl: String,
     okHttp: OkHttpClient.Builder,
     converterFactory: Converter.Factory
 ) : IStudTourService {
@@ -19,6 +21,13 @@ class StudTourService(
 
     private val client = Retrofit.Builder()
         .baseUrl(baseUrl)
+        .client(okHttp.apply { addInterceptor(authInterceptor) }.build())
+        .addConverterFactory(converterFactory)
+        .build()
+        .create(StudTourApiService::class.java)
+
+    private val bookingClient = Retrofit.Builder()
+        .baseUrl(bookingUrl)
         .client(okHttp.apply { addInterceptor(authInterceptor) }.build())
         .addConverterFactory(converterFactory)
         .build()
@@ -50,5 +59,9 @@ class StudTourService(
 
     override suspend fun getLabs(labID: String): List<LabEntity> {
         return client.getLabs(labID).requestStatus().toLabs()
+    }
+
+    override suspend fun postBooking(bookingData: BookingData): Boolean {
+        return bookingClient.postBooking(bookingData).requestStatus()?.isEmpty() ?: false
     }
 }

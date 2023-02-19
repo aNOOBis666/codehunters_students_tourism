@@ -25,6 +25,10 @@ dependencies {
     implementation project(':network')
     implementation project(':data')
 
+    implementation libraries.roomRuntime
+    implementation libraries.roomCompiler
+    implementation libraries.roomCoroutines
+
     implementation libraries.hilt
     implementation libraries.lifecycleProcess
     kapt libraries.hiltCompiler
