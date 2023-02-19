@@ -72,8 +72,8 @@ interface IBookEventReturn {
 }
 
 interface IBookingModel {
-  book: (info: IBookProps, token: string) => Promise<IBookReturn>;
-  unbook: (info: IUnbookProps, token: string) => Promise<IBookReturn>;
+  book: (info: IBookProps, token: string) => Promise<IBookReturn | void>;
+  unbook: (info: IUnbookProps, token: string) => Promise<IBookReturn | void>;
   bookEvent: (
     info: IBookEventProps,
     token: string
@@ -82,30 +82,38 @@ interface IBookingModel {
 }
 
 export class BookingModel implements IBookingModel {
-  async book(info: IBookProps, token: string): Promise<IBookReturn> {
-    const { data } = await axios.post(
-      "https://stud-api.sabir.pro/bookings",
-      info,
-      {
-        headers: {
-          Authorization: token,
-        },
-      }
-    );
-    return data;
+  async book(info: IBookProps, token: string): Promise<IBookReturn | void> {
+    try {
+      const { data } = await axios.post(
+        "https://stud-api.sabir.pro/bookings",
+        info,
+        {
+          headers: {
+            Authorization: token,
+          },
+        }
+      );
+      return data;
+    } catch (e) {
+      console.log(`Произошла ошибка: ${e}`);
+    }
   }
 
-  async unbook(info: IUnbookProps, token: string): Promise<IBookReturn> {
-    const { data } = await axios.put(
-      "https://stud-api.sabir.pro/bookings",
-      info,
-      {
-        headers: {
-          Authorization: token,
-        },
-      }
-    );
-    return data;
+  async unbook(info: IUnbookProps, token: string): Promise<IBookReturn | void> {
+    try {
+      const { data } = await axios.put(
+        "https://stud-api.sabir.pro/bookings",
+        info,
+        {
+          headers: {
+            Authorization: token,
+          },
+        }
+      );
+      return data;
+    } catch (e) {
+      console.log(`Произошла ошибка: ${e}`);
+    }
   }
 
   async bookEvent(
