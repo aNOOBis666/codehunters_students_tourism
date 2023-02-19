@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Splash.Theme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimationDuration">750</item>
+        <item name="windowSplashScreenBackground">@color/accent_primary</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_header</item>
+        <item name="postSplashScreenTheme">@style/Theme.Studtour</item>
+    </style>
+</resources>

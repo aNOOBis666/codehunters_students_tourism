@@ -2,6 +2,7 @@ package com.codehunters.studtour
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
@@ -25,6 +26,7 @@ class HostActivity : AppCompatActivity(R.layout.ac_host) {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         navigationDispatcher.navigationCommandFlow.observe(this) { command ->
             command.invoke(navController)

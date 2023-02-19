@@ -6,21 +6,12 @@
         <item name="android:textColor">@color/text_primary</item>
         <item name="colorControlNormal">@color/accent_primary</item>
     </style>
-<!--    <style name="Splash.Theme" parent="Theme.SplashScreen">-->
-<!--        <item name="windowSplashScreenAnimationDuration">750</item>-->
-<!--        <item name="windowSplashScreenBackground"></item>-->
-<!--        <item name="windowSplashScreenAnimatedIcon"></item>-->
-<!--        <item name="postSplashScreenTheme">@style/App.Theme</item>-->
-<!--    </style>-->
-
-<!--    <style name="App.Theme" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
-<!--        <item name="colorPrimary"></item>-->
-<!--        <item name="colorPrimaryDark"></item>-->
-<!--        <item name="android:windowLightStatusBar"></item>-->
-<!--        <item name="android:windowBackground"></item>-->
-<!--        <item name="android:textColor"></item>-->
-<!--        <item name="colorControlNormal"></item>-->
-<!--    </style>-->
+    <style name="Splash.Theme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimationDuration">750</item>
+        <item name="windowSplashScreenBackground">@color/accent_primary</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_header</item>
+        <item name="postSplashScreenTheme">@style/Theme.Studtour</item>
+    </style>
 
     <style name="BottomNavigationView">
         <item name="android:background">@android:color/white</item>
